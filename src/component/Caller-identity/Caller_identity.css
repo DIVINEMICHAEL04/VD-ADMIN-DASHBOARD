@@ -1,0 +1,261 @@
+    .caller-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+    }
+    
+    .callers-overview {
+        width: 100%;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        padding: 0px 32px 0px 32px;
+        gap: 10px;
+    }
+    
+    .sub-callers-overview {
+        width: 100%;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .call-id {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .caller-search {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        height: 54px;
+    }
+    
+    .date-picker {
+        border: 1px solid #F3F4F6;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 145px;
+    }
+    
+    .caller-search-input {
+        width: 100%;
+        max-width: 625px;
+        border-radius: 12px;
+        border: 1px solid #F3F4F6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 16px 0px 16px;
+    }
+    
+    .caller-subscription {
+        width: 100%;
+        max-width: 177px;
+        border-radius: 12px;
+        border: 1px solid #F3F4F6;
+        align-items: center;
+        gap: 12px;
+        height: auto;
+        position: relative;
+        padding-top: 4px;
+    }
+    
+    .call-status {
+        align-items: center;
+        width: 100%;
+        max-width: 105px;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid #F3F4F6;
+        /* padding: 0px 16px 0px 16px; */
+        gap: 12px;
+        position: relative;
+        padding-top: 4px;
+    }
+    
+    .call-status .dropdown-content {
+        display: none;
+    }
+    
+    .callers-details {
+        width: 100%;
+        display: flex;
+        max-width: 1096px;
+        background-color: #F9FAFB;
+        height: 56px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+    .callers-initial-info {
+        width: 100%;
+        display: flex;
+        max-width: 1096px;
+    }
+    
+    .caller-users-name {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 305px;
+    }
+    
+    .callers-phone-number {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 148px;
+    }
+    
+    .callers-subscription {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 155px;
+    }
+    
+    .callers-permanent-id {
+        width: 100%;
+        max-width: 148px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .callers-status {
+        width: 100%;
+        max-width: 148px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .status-type {
+        display: flex;
+        width: 100%;
+        /* max-width: 112px; */
+        border-bottom: 1px solid #E5E7EB;
+        padding: 21.2px 24px;
+        height: 63px;
+    }
+    
+    .sub-status-type {
+        display: flex;
+        width: 100%;
+        max-width: 74px;
+    }
+    
+    .status-type-coloured-bg {
+        display: flex;
+        width: 100%;
+        border-radius: 16px;
+        padding: 2px 8px 2px 6px;
+        background-color: #F0FDF4;
+        align-items: center;
+        max-width: 74px;
+        gap: 6px;
+    }
+    
+    .green-status-bg {
+        width: 8px;
+        height: 8px;
+        background-color: #22C55E;
+        border-radius: 50px;
+        color: transparent;
+    }
+    
+    .Approved {
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 160%;
+        letter-spacing: 0.2px;
+        text-align: center;
+        align-items: center;
+        color: #15803D !important;
+    }
+    
+    .Rejected-bg {
+        background-color: #FEF2F2 !important;
+    }
+    
+    .red-status-bg {
+        width: 8px;
+        height: 8px;
+        background-color: #EF4444;
+        border-radius: 50px;
+        color: transparent;
+    }
+    
+    .Rejected {
+        color: #B91C1C !important;
+    }
+    
+    .Pending-bg {
+        background-color: #FEFCE8;
+    }
+    
+    .yellow-status-bg {
+        background-color: #EAB308;
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        color: transparent;
+    }
+    
+    .Pending {
+        color: #A16207 !important;
+    }
+    
+    .more-call-action {
+        display: flex;
+        flex-direction: column;
+        max-width: 52px;
+        width: 100%;
+    }
+    
+    .more-call-heading {
+        display: flex;
+        max-width: 52px;
+        width: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 16px;
+        gap: 10px;
+        background-color: #F9FAFB;
+        height: 52px;
+    }
+    
+    .more-call-heading p {
+        display: flex;
+        align-items: center;
+        color: transparent;
+    }
+    
+    .call-bars {
+        display: flex;
+        width: 100%;
+        max-width: 52px;
+        /* border-bottom: 1px solid #E5E7EB; */
+        padding: 16px;
+        gap: 12px;
+        height: 64px;
+        cursor: pointer;
+    }
+    
+    .call-bars img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .hidden-pages {
+        display: none;
+    }

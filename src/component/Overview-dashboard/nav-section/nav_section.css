@@ -1,0 +1,145 @@
+.nav-bar {
+    display: flex;
+    width: 100%;
+    max-width: 268px;
+    /* height: 100vh; */
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.veil-nav-bar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #F1F1F1;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 28px;
+    width: 100%;
+}
+
+.nav-img {
+    display: flex;
+    padding: 0px 24px 0px 24px;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-logo {
+    color: #014220;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px 0px 16px;
+    gap: 12px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.quick-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    max-width: 226px;
+}
+
+.quick-links img {
+    width: 100%;
+    max-width: 24px;
+}
+
+.list-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.quick-links .list-link,
+p {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    text-align: center;
+    align-content: center;
+    color: #111827;
+}
+
+.quick-links .active-link {
+    background-color: #014220;
+    width: 100%;
+    max-width: 264px;
+    height: 40px;
+    border-radius: 8px;
+    color: #FFFFFF !important;
+    padding: 0px 5px 0px 5px;
+}
+
+.list-link.active-link p {
+    color: #FFFFFF !important;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 16px 24px 16px;
+    gap: 24px;
+}
+
+.org-settings {
+    display: flex;
+}
+
+.account-settings {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.managers-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accounts-email {
+    display: flex;
+    gap: 12px;
+}
+
+.usernameAndEmail {
+    display: flex;
+    flex-direction: column;
+}
+
+.managers-name {
+    text-align: start;
+}
+
+.managers-email {
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.logout-img {
+    width: 100%;
+    max-width: 24px;
+    height: 24px;
+}

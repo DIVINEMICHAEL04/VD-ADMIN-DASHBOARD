@@ -1,0 +1,6 @@
+.revenue-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* width: fit-content; */
+}

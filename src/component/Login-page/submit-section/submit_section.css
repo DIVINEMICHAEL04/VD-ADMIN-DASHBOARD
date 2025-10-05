@@ -1,0 +1,37 @@
+.password-character {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.numbers-character {
+    display: flex;
+    gap: 100px;
+    height: auto;
+}
+
+.number-check {
+    padding-left: 62px;
+}
+
+.submit-password {
+    padding-top: 10px;
+}
+
+.custom-checkbox {
+    display: flex;
+    gap: 8px;
+}
+
+.custom-checkbox p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #27A376;
+}
+
+.custom-checkbox .lowercase {
+    color: #DC2626;
+}

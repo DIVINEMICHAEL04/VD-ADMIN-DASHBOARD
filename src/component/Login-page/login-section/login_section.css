@@ -1,0 +1,319 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .login-page {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .login-intro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+    }
+    
+    .earpiece-img {
+        width: 100%;
+    }
+    
+    .earpiece-img img {
+        width: 100%;
+        max-width: 720px;
+    }
+    
+    .login-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 5px solid #6DB48F;
+        background-color: #0F1B14;
+        padding: 50px 50px 80px 50px;
+        gap: 24px;
+    }
+    
+    .veil-logo {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+    }
+    
+    .veil-digits {
+        width: 39.75px;
+    }
+    
+    .veil-logo p {
+        width: 109px;
+        height: 23px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+    
+    .vd-heading-texts h2 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+    }
+    
+    .vd-paragraph-text p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+    
+    .login-form-section {
+        padding-top: 40px !important;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 24px;
+        gap: 10px;
+    }
+    
+    .login-arrow-img {
+        width: 100%;
+    }
+    
+    .login-arrow-img img {
+        width: 100%;
+        max-width: 100px;
+        height: 61px;
+    }
+    
+    .login-form {
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        gap: 32px;
+    }
+    
+    .login-heading-text h4 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0px;
+        color: #1F2937;
+        text-align: center;
+    }
+    
+    .input-field {
+        width: 100%;
+        height: auto;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .email-section,
+    .password-section {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .users-info {
+        width: 100%;
+        display: flex;
+        gap: 2px;
+    }
+    
+    .e-mail {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-style: medium;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0px;
+        color: #1F2937;
+    }
+    
+    .email-asterisk {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-style: medium;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0px;
+        color: #E03137;
+    }
+    
+    .info-field {
+        width: 100%;
+        max-width: 480px;
+        border-radius: 10px;
+        border: 1px solid #E5E7EB;
+        padding: 16px 20px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .info-field:focus-within {
+        border: 1px solid #16A34A;
+        outline: none;
+    }
+    
+    #user-email,
+    #user-password {
+        width: 100%;
+        max-width: 440px;
+        outline: none;
+        border: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0px;
+        align-items: center;
+    }
+    
+    .password-eye {
+        display: none;
+    }
+    
+    .warning {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        display: none;
+    }
+    
+    .warning p {
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        letter-spacing: 0px;
+        align-items: center;
+        color: #DC2626;
+        padding-top: 2px;
+    }
+    
+    .password-field img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .reset-password {
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    
+    .remember-password {
+        width: 100%;
+        max-width: 165.5px;
+        display: flex;
+        gap: 8px;
+    }
+    
+    #checkbox {
+        width: 20px;
+        height: 20px;
+        accent-color: #16A34A !important;
+    }
+    
+    .remember-password p,
+    .forgotten-password,
+    .href {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0px;
+        align-items: center;
+        color: #6B7280;
+        text-decoration: none;
+    }
+    
+    .login-btn {
+        width: 100%;
+        max-width: 480px;
+        height: 56px;
+        border-radius: 10px;
+        padding: 21px 24px;
+        gap: 8px;
+        background-color: #F3F4F6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .log-in {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        font-style: bold;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #9CA3AF;
+        border: none;
+        cursor: pointer;
+        background-color: #F3F4F6;
+    }
+    
+    .copyright {
+        display: flex;
+        gap: 10px;
+        padding-top: 300px;
+        align-items: center;
+    }
+    
+    .right-reserved {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        font-style: medium;
+        line-height: 160%;
+        letter-spacing: 0px;
+        color: #9CA3AF;
+    }
+    
+    .vd-terms {
+        display: flex;
+        gap: 9px;
+    }
+    
+    .vd-terms p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        font-style: medium;
+        line-height: 160%;
+        letter-spacing: 0px;
+        color: #1F2937;
+    }

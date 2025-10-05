@@ -1,0 +1,777 @@
+.accounts-overview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+}
+
+.search-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 24px 32px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-search-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background-color: #F9FAFB;
+    cursor: pointer;
+}
+
+.search-icon {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.search-icon input {
+    background-color: #F9FAFB;
+}
+
+.admin-quick-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    height: 35px;
+}
+
+.search-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accounts-view {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 32px 0px 32px;
+    gap: 10px;
+}
+
+.admin-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.overview-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.overview-heading h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #1F2937;
+}
+
+.overview-heading p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #9CA3AF;
+    text-align: start;
+}
+
+.overview-summary {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.all-revenue {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.sub-all-revenue {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.total-revenue {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-revenue p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #1F2937;
+}
+
+.this-month {
+    display: flex;
+    width: 100%;
+    max-width: 96px;
+    align-items: center;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 4px 8px 4px 10px;
+    gap: 4px;
+}
+
+.this-month p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18%;
+    letter-spacing: 0px;
+    color: #4B5563;
+    text-align: center;
+}
+
+.this-month img {
+    width: 100%;
+    max-width: 12px;
+    height: 12px;
+}
+
+.sum {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #1F2937;
+}
+
+.interest-rate {
+    display: flex;
+    gap: 12px;
+}
+
+.interest-percentage {
+    display: flex;
+    gap: 4px;
+    padding: 2px 8px 2px 10px;
+    border-radius: 16px;
+    border: 1px solid #15803D;
+    background-color: #DCFCE7;
+}
+
+.interest-percentage p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20%;
+    letter-spacing: 0px;
+    color: #15803D;
+    text-align: center;
+}
+
+.interest-percentage img {
+    width: 100%;
+    max-width: 12px;
+}
+
+.last-month-sum {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18%;
+    letter-spacing: 0px;
+    color: #4B5563;
+    text-align: right;
+}
+
+.charts {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.data-charts {
+    width: 100%;
+    border: 1px solid #F3F4F6;
+}
+
+.line-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-subscription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Recent-Users {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #4B5563;
+    text-align: start;
+}
+
+.search-user {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    outline: none;
+}
+
+.search-user-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #F3F4F6;
+    padding: 0px 16px 0px 16px;
+}
+
+.search-vd-user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.search-vd-user input {
+    width: 100%;
+}
+
+#Search-users {
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+.search-img {
+    width: 100%;
+    max-width: 16px;
+    height: 16px;
+}
+
+.all-users-subscription {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    position: relative;
+    justify-content: end;
+}
+
+.subscription-dropdown {
+    /* width: 100%; */
+    height: auto;
+    /* max-width: 177px !important; */
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    position: relative;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    z-index: 99;
+}
+
+.active-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    border-radius: 10px;
+    max-width: 180px;
+    padding: 4px 2px 4px 6px;
+    background-color: #F9FAFB;
+}
+
+.active-sub {
+    font-weight: 600 !important;
+}
+
+.users-content {
+    width: 100%;
+}
+
+.users-content p {
+    text-align: start;
+    font-size: 10px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #111827;
+    cursor: pointer;
+}
+
+.users-content p:hover {
+    border-radius: 10px;
+    width: 100%;
+    /* max-width: 180px; */
+    padding: 4px 2px 4px 6px;
+    background-color: #F9FAFB;
+}
+
+.all-subscription {
+    display: flex;
+    border-radius: 12px;
+    height: auto;
+    /* border: 1px solid #F3F4F6; */
+    padding: 14px 16px 14px 16px;
+    gap: 12px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 177px;
+}
+
+.users-last-actions {
+    width: 100%;
+    max-width: 139px;
+}
+
+.all-subscription p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #374151;
+}
+
+.all-subscription img {
+    width: 100%;
+    max-width: 16px;
+    height: 16px;
+}
+
+.users-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.users-initials {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.initial-heading {
+    width: 100%;
+    max-width: 307px;
+    display: flex !important;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 16px;
+    gap: 10px;
+    background-color: #F9FAFB;
+}
+
+#users-initials-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D1D5DB;
+    padding-top: 0;
+    accent-color: #3A8E63;
+}
+
+.initial-heading p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #6B7280;
+}
+
+.users-information {
+    width: 100%;
+    max-width: 307px;
+    display: flex;
+    flex-direction: column;
+}
+
+.users-basic-info {
+    display: flex;
+    align-items: center !important;
+    padding: 18px 16px 18px 16px;
+    border-bottom: 1px solid rgb(238, 234, 234);
+    gap: 12px;
+    width: 100%;
+    max-width: 307px;
+    height: 63px;
+}
+
+.userName-userEmail {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.hanna {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #111827;
+    text-align: start;
+}
+
+.users-email-account {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #6B7280;
+}
+
+.default-username {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 24px;
+    height: 24px;
+    border-radius: 1000px;
+    background-color: #AFD9C3;
+}
+
+.default-username p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #0F281B;
+}
+
+.users-tel {
+    width: 100%;
+    max-width: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number-heading {
+    width: 100%;
+    max-width: 148px;
+    gap: 10px;
+    padding: 16px;
+    display: flex;
+    background-color: #F9FAFB;
+}
+
+.number-heading p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #6B7280;
+}
+
+.users-call-no {
+    width: 100%;
+    max-width: 148px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.users-phone-no {
+    width: 100%;
+    max-width: 148px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid rgb(238, 234, 234);
+    gap: 12px;
+}
+
+.users-phone-no p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    color: #1F2937;
+}
+
+.subscription-heading {
+    width: 100%;
+    max-width: 155px;
+}
+
+.user-account-sub {
+    width: 100%;
+    max-width: 155px;
+    display: flex;
+    flex-direction: column;
+    height: 63px;
+}
+
+.user-account-sub-plan {
+    width: 100%;
+    max-width: 155px;
+    height: 63px;
+}
+
+.plan-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px 4px 16px;
+    border-bottom: 1px solid rgb(238, 234, 234);
+    gap: 4px;
+    width: 100%;
+    max-width: 123px;
+    border-radius: 4px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+}
+
+.bg-a {
+    background-color: #F9FAFB;
+    color: #374151;
+}
+
+.bg-b {
+    background-color: #EFF6FF;
+    color: #1D4ED8;
+}
+
+.bg-g {
+    background-color: #F0FDF4;
+    color: #15803D;
+}
+
+.users-sub {
+    width: 100%;
+    max-width: 155px;
+    display: flex;
+    flex-direction: column;
+}
+
+.users-accounts-sub {
+    width: 100%;
+    padding: 16px;
+    gap: 10px;
+    background-color: #F9FAFB;
+}
+
+.users-accounts-sub p {
+    font-family: 'Rethink sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #6B7280;
+}
+
+.users-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    max-width: 307.5px;
+}
+
+.profile-heading {
+    width: 100%;
+    max-width: 307.5px;
+}
+
+.users-percentage {
+    width: 100%;
+    max-width: 307.5px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px 16px 24px;
+    border-bottom: 1px solid #E5E7EB;
+    gap: 12px;
+}
+
+.percent-bar {
+    width: 100%;
+    max-width: 259.5px;
+    height: 32px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.percent-bar p {
+    font-family: 'Rethink sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #014220;
+    align-items: center;
+}
+
+.full-bar {
+    width: 100%;
+    max-width: 218.5px;
+    height: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.full-bar-bg-g {
+    width: 100%;
+    max-width: 132.06px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #014220;
+}
+
+.progress-completed {
+    width: 100%;
+    max-width: 210.5px;
+    background-color: #014220;
+}
+
+.full-bar-bg-w {
+    width: 100%;
+    max-width: 219px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #F3F4F6;
+}
+
+.last-actions {
+    width: 100%;
+    max-width: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action-heading {
+    position: relative;
+    max-width: 148px;
+    text-wrap: nowrap;
+}
+
+.users-last-action {
+    width: 100%;
+    max-width: 148px;
+    display: flex;
+    flex-direction: column;
+    height: 63px;
+}
+
+.users-call-type {
+    display: flex;
+    align-items: center;
+    max-width: 148px;
+    width: 100%;
+    padding: 16px;
+    gap: 12px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.users-call-type p {
+    font-family: 'Rethink sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #1F2937;
+    align-items: center;
+}
+
+.more-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 42px;
+}
+
+.no-action {
+    width: 100%;
+    max-width: 42px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 16px;
+    gap: 10px;
+    background-color: #F9FAFB;
+}
+
+.no-action p {
+    font-family: 'Ralewaylast', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: transparent;
+}
+
+.fa-bars {
+    width: 100%;
+    max-width: 42px;
+    height: 63px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    border-bottom: 1px solid #E5E7EB;
+    cursor: pointer;
+    position: relative;
+}

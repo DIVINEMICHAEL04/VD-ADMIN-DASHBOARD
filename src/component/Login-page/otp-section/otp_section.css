@@ -1,0 +1,54 @@
+.forgotten-passkey #bold,
+#link {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: black;
+}
+
+#link {
+    color: #799963;
+    text-decoration-color: #799963;
+}
+
+.code-numbers {
+    display: flex;
+    gap: 24px;
+}
+
+.code-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 102px;
+    height: 56px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+}
+
+.code-boxes:focus-within {
+    border: 1px solid #16A34A;
+    outline: none;
+}
+
+.code-boxes input {
+    border: none;
+    width: 100px;
+    text-align: center;
+    outline: none;
+}
+
+.code-boxes p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #1F2937;
+}

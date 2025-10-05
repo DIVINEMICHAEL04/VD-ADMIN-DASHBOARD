@@ -1,0 +1,129 @@
+.fraud-section {
+    width: 100%;
+    /* width: fit-content; */
+}
+
+.bg-ash {
+    background-color: #374151;
+}
+
+.bg-ash span {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.Totall,
+.dailyy {
+    color: #FFFFFF !important;
+}
+
+.bg-lightash {
+    background-color: #6B7280;
+}
+
+.bg-lightash p {
+    color: #FFFFFF;
+}
+
+.bg-lightyellow {
+    background-color: #FEFCE8;
+}
+
+.bg-yellow {
+    background-color: #EAB308 !important;
+}
+
+.bg-yellow p {
+    color: #FFFFFF !important;
+}
+
+.bg-lightred {
+    background-color: #FEF2F2;
+}
+
+.Suspended {
+    color: #A16207 !important;
+}
+
+.Banned {
+    color: #B91C1C !important;
+}
+
+.bg-red {
+    background-color: #EF4444 !important;
+}
+
+.bg-red p {
+    color: #FFFFFF !important;
+}
+
+.permenant-id {
+    display: flex;
+    align-items: center;
+}
+
+.user-subscription {
+    width: 100%;
+}
+
+.flagged-status {
+    display: flex;
+    width: 100%;
+    max-width: 148px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #E5E7EB;
+    height: 63px;
+}
+
+.Note {
+    width: 100%;
+    max-width: 308px;
+}
+
+.note-heading {
+    width: 100%;
+    max-width: 308px;
+}
+
+.note-para {
+    width: 100%;
+    border-bottom: 1px solid rgb(238, 234, 234);
+    max-width: 308px;
+}
+
+.bars-dropdown {
+    width: 100%;
+    width: fit-content;
+    height: 200px;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 8px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    box-shadow: 4px 6px 10px gray;
+}
+
+.bars-dropdown p {
+    font-family: "Raleway", sans-serif;
+}
+
+.users-content {
+    display: flex;
+    text-wrap: nowrap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}

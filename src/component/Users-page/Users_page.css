@@ -1,0 +1,133 @@
+        .faint-text {
+            color: #9CA3AF !important;
+        }
+        
+        .pages-heading {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .pages-heading img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .pages-heading p {
+            color: #1F2937;
+        }
+        
+        .s-n {
+            width: 100%;
+            max-width: 87px;
+        }
+        
+        .page-sub {
+            width: 100%;
+            /* max-width: 191px; */
+        }
+        
+        .date-picker {
+            border: 1px solid #F3F4F6;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 145px;
+            gap: 12px;
+            height: auto;
+            position: relative;
+            padding-top: 4px;
+        }
+        
+        .date-dropdown-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 16px;
+            border-radius: 12px;
+            width: auto;
+            left: -20px;
+            max-width: 364px !important;
+            position: absolute;
+            background-color: #FFFFFF;
+            justify-content: space-around;
+            z-index: 99;
+            top: 55px;
+            /* height: 150px; */
+            box-shadow: 4px 6px 10px gray;
+        }
+        
+        .set-date {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .set-date-heading {
+            color: #1F2937;
+            font-weight: 700;
+            text-align: start;
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0px;
+        }
+        
+        .dropdown-border {
+            display: flex;
+            width: 100%;
+            max-width: 316px;
+            gap: 10px;
+            border: 1px solid #E5E7EB;
+        }
+        
+        .react-datepicker {
+            border: none !important;
+        }
+        
+        .react-datepicker__day--selected,
+        .react-datepicker__day--selected:hover {
+            background-color: #1F2937!important;
+            color: #fff !important;
+            border-radius: 10px;
+        }
+        
+        .date-picker-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .admin-cancel,
+        .admin-save {
+            display: flex;
+            height: 48px;
+            border-radius: 10px;
+            padding: 21px 24px;
+            gap: 8px;
+            border: 1px solid #D1D5DB;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            color: #1F2937;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.2px;
+            text-align: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .admin-save {
+            background-color: #1F2937!important;
+            color: #fff !important;
+        }
+        
+        .userpage-dropdown {
+            display: flex;
+            height: 148px;
+            justify-content: center;
+            width: auto;
+            max-width: 232px;
+            top: 65px;
+        }
