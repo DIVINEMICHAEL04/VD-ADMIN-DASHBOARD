@@ -18,7 +18,7 @@ import arrowLeft from "../../assets/arrow-left (2).png"
 import arrowRight from "../../assets/arrow-right.png"
 
 
-import "./UserList_dashboard.css"
+import "./Userlist_dashboard.css"
 
 export default function UserListDashboard(){
     const [searchHeaderText, setSearchHeaderText] = useState("");
