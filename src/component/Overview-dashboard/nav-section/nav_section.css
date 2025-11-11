@@ -25,9 +25,18 @@
 
 .nav-img {
     display: flex;
-    padding: 0px 24px 0px 24px;
+    padding: 0px 0px 0px 24px;
     gap: 10px;
     align-items: center;
+}
+
+.veil-logo {
+    display: flex;
+    gap: 12px;
+}
+
+.navLeft {
+    cursor: pointer;
 }
 
 .header-logo {

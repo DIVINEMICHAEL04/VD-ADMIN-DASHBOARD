@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import mockUsers from "../../data/mockUsers";
 import chevronDown from "../../assets/chevron-down.png"
 import Avatar from "../../assets/Avatar.png"
 import Rayna from "../../assets/Rayna.png"
@@ -21,6 +20,8 @@ import arrowRight from "../../assets/arrow-right.png"
 import "./Userlist_dashboard.css"
 
 export default function UserListDashboard(){
+     const getActiveClass = (path) => 
+  location.pathname.startsWith(path) ? 'active-link' : '';
     const [searchHeaderText, setSearchHeaderText] = useState("");
     const [searchUserText, setSearchUserText] = useState("");
      const [openSubscriptions, setOpenSubscriptions] = useState(false);
@@ -30,6 +31,26 @@ export default function UserListDashboard(){
       setSearchText(e.target.value);  
       console.log("User typed:", e.target.value); 
     };
+        const [openIndex, setOpenIndex] = useState(null); 
+        const [activeActions, setActiveActions] = useState({});
+
+      const toggleDropdown = (index) => {
+    setOpenIndex(openIndex === index ? null : index); 
+  };
+
+  const bars = Array.from({ length: 9 });
+
+
+
+  const handleActionToggle = (barIndex, actionType) => {
+    setActiveActions((prev) => ({
+      ...prev,
+      [barIndex]: {
+        ...prev[barIndex],
+        [actionType]: prev[barIndex]?.[actionType] === "revoke" ? "deactivate" : "revoke"
+      }
+    }));
+  };
     return(
          <div className="accounts-overview user-table">
           <div className="search-header">
@@ -559,69 +580,117 @@ export default function UserListDashboard(){
               </div>
           </div>
 
-          <div className="more-actions">
-              <div className="no-action">
-                  <p>hell</p>
+           <div className="more-actions">
+                <div className="no-action"><p>null</p></div>
+          
+                {bars.map((_, index) => (
+                  <div className="fa-bars" key={index}>
+                    <img
+                      src={bar}
+                      alt="toggle"
+                      onClick={() => toggleDropdown(index)}
+                    />
+                    {openIndex === index && (
+                      <div className="bars-dropdown">
+                        <div className="users-content">
+                           <Link 
+                             className={`list-link ${getActiveClass('/UserListPage/UserSection')}`} 
+                             to="/UserListPage/UserSection"
+                           >
+                             <p>View profile</p>
+                           </Link>
+                        </div> 
+          
+                        {/* Suspend / Unsuspend */}
+                        <div className="users-content">
+                          {activeActions[index]?.suspend === "revoke" ? (
+                            <p
+                              className="revoke-action"
+                              onClick={() => handleActionToggle(index, "suspend")}
+                            >
+                              Unsuspend user
+                            </p>
+                          ) : (
+                            <p
+                              className="deactivate-user"
+                              onClick={() => handleActionToggle(index, "suspend")}
+                            >
+                              Suspend user
+                            </p>
+                          )}
+                        </div>
+          
+                        {/* Ban / Unban */}
+                        <div className="users-content">
+                          {activeActions[index]?.ban === "revoke" ? (
+                            <p
+                              className="revoke-action"
+                              onClick={() => handleActionToggle(index, "ban")}
+                            >
+                              Unban user
+                            </p>
+                          ) : (
+                            <p
+                              className="deactivate-user"
+                              onClick={() => handleActionToggle(index, "ban")}
+                            >
+                              Ban user
+                            </p>
+                          )}
+                        </div>
+          
+                        {/* Deactivate / Reactivate */}
+                        <div className="users-content">
+                          {activeActions[index]?.deactivate === "revoke" ? (
+                            <p
+                              className="revoke-action"
+                              onClick={() => handleActionToggle(index, "deactivate")}
+                            >
+                              Reactivate account
+                            </p>
+                          ) : (
+                            <p
+                              className="deactivate-user"
+                              onClick={() => handleActionToggle(index, "deactivate")}
+                            >
+                              Deactivate account
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
-
-               <div className="fa-bars">
-                   <img src={bar} alt="" />
-               </div>
-
-               <div className="fa-bars">
-                   <img src={bar} alt="" />
-               </div>
-
-               <div className="fa-bars">
-                   <img src={bar} alt="" />
-               </div>
-
-               <div className="fa-bars">
-                   <img src={bar} alt="" />
-               </div>
-
-              <div className="fa-bars">
-                  <img src={bar} alt="" />
-              </div>
-              <div className="fa-bars">
-                  <img src={bar} alt="" />
-              </div>
-              <div className="fa-bars">
-                  <img src={bar} alt="" />
-              </div>
-              <div className="fa-bars">
-                  <img src={bar} alt="" />
-              </div>
-          </div>
             </div>
             <div className="bottom-pagination">
-                            <div className="numbered-pager">
-                                <div className="arrow-left">
-                                    <img src={arrowLeft} alt="" />
-                                </div>
-                                <div className="pages-number">
-                                    <div className="page-one active-page"><p className='pages'>1</p></div>
-                                    <div className="page-one"><p className='pages'>2</p></div>
-                                    <div className="page-one"><p className='pages'>3</p></div>
-                                    <div className="more-pages"><p className='elipses'>...</p>
-                                    <div className="page-one"><p className='pages'>4</p></div>
-                                    <div className="page-one"><p className='pages'>5</p></div>
-                                    <div className="page-one"><p className='pages'>6</p></div>
-                                    <div className="page-one"><p className='pages'>7</p></div>
-                                    <div className="page-one"><p className='pages'>8</p></div>
-                                    <div className="page-one"><p className='pages'>9</p></div>
-                                    </div>
-                                    <div className="page-one"><p className='pages'>10</p></div>
-                                </div>
-                                <div className="arrow-left">
-                                    <img src={arrowRight} alt="" />
-                                </div>
-                            </div>
-
-                            <div className="nine-fifty-entries">
-                                <p>Showing 1 to 9 of 50 entries</p>
-                            </div>
-                        </div>
+                                         <div className="numbered-pager">
+                                             <div className="arrow-left">
+                                                 <img src={arrowLeft} alt="" />
+                                             </div>
+                                             <div className="pages-number">
+                                                 <div className="page-one active-page"><p className='pages'>1</p></div>
+                                                 <div className="page-one"><p className='pages'>2</p></div>
+                                                 <div className="page-one"><p className='pages'>3</p></div>
+                                                 <div className="more-pages"><p className='elipses'>...</p>
+                                                 <div className="page-one hidden-pages"><p className='extra-pages'>4</p></div>
+                                                 <div className="page-one hidden-pages"><p className='extra-pages'>5</p></div>
+                                                 <div className="page-one hidden-pages"><p className='extra-pages'>6</p></div>
+                                                 <div className="page-one hidden-pages"><p className='extra-pages'>7</p></div>
+                                                 <div className="page-one hidden-pages"><p className='extra-pages'>8</p></div>
+                                                 <div className="page-one hidden-pages"><p className='extra-pages'>9</p></div>
+                                                 </div>
+                                                 <div className="page-one"><p className='pages'>10</p></div>
+                                             </div>
+                                             <div className="arrow-left">
+                                                 <img src={arrowRight} alt="" />
+                                             </div>
+                                         </div>
+               
+                                         <div className="nine-fifty-entries">
+                                             <p>Showing 1 to 9 of 50 entries</p>
+                                         </div>
+                                     </div>
         </div> 
     )
 }

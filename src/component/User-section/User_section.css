@@ -1,0 +1,382 @@
+.users-section-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.individual-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 32px 0px 32px;
+    gap: 10px;
+    height: auto;
+}
+
+.sub-individual-info {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 32px 0px 32px;
+}
+
+.sub-user-heading {
+    width: 100%;
+    max-width: 171px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.sub-user-heading img {
+    width: 24px;
+    height: 24px;
+}
+
+.sub-user-heading h3 {
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+.users-details-log {
+    display: flex;
+    width: 100%;
+    padding-bottom: 24px;
+    gap: 24px;
+}
+
+.user-initial-log {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    color: #FFFFFF;
+    padding: 24px;
+    gap: 24px;
+    height: fit-content;
+}
+
+.user-initial-log img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.pristiaa-candra {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 252px;
+    gap: 10px;
+}
+
+.user-pristiaa {
+    font-size: 20px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #111827;
+}
+
+.pristiaa-tel {
+    font-size: 14px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #6B7280;
+}
+
+.user-sub-plan {
+    display: flex;
+    width: 100%;
+    max-width: 252px;
+    border-bottom: 1px solid;
+    padding: 0px 60px 0px 60px;
+    gap: 12px;
+}
+
+.sub-free-plan {
+    display: flex;
+    width: 100%;
+    max-width: 132px;
+    border-radius: 8px;
+    padding: 4px 16px 4px 16px;
+    gap: 4px;
+    background-color: #F9FAFB;
+}
+
+.sub-free-plan p {
+    font-size: 10px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    align-items: center;
+    color: #374151;
+    text-wrap: nowrap;
+}
+
+.demarcation-line-one {
+    display: flex;
+    width: 100%;
+    max-width: 252px;
+    border: 1px solid #E5E7EB;
+    height: 1px;
+    gap: 10px;
+    background-color: #E5E7EB;
+}
+
+.pristiaa-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pristia-mail {
+    display: flex;
+    gap: 10px;
+}
+
+.pristia-mail img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.pristia-mail p {
+    font-size: 14px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #374151;
+}
+
+.pristia-phone {
+    display: flex;
+    gap: 10px;
+}
+
+.pristia-phone img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.pristia-phone p {
+    font-size: 14px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #374151;
+}
+
+.profile-management {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    padding: 24px;
+    gap: 24px;
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 794px;
+}
+
+.profile-management-heading {
+    display: flex;
+    border-bottom: 1px solid #E5E7EB;
+    width: 100%;
+    max-width: 746px;
+}
+
+.pristia-profile {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #014220;
+    justify-content: space-between;
+    padding: 0px 14px 0px 14px;
+    width: 100%;
+    max-width: 186.5px;
+    cursor: pointer;
+}
+
+.pristia-profile #heading-links {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #014220;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pristia-call-logs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 14px 4px 14px;
+    width: 100%;
+    max-width: 186.5px;
+}
+
+#heading-link {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+#heading-link p {
+    color: #6B7280;
+}
+
+.pristia-personal-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 746px;
+    padding: 12px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    background-color: #FFFFFF;
+}
+
+.personal-info-heading {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    max-width: 698px;
+}
+
+.personal-info-heading p {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #111827;
+}
+
+.demarcation-line-two {
+    display: flex;
+    width: 100%;
+    max-width: 698px;
+    border: 1px solid #E5E7EB;
+    height: 1px;
+    gap: 10px;
+}
+
+.pristia-info-table {
+    display: flex;
+    width: 100%;
+    max-width: 698px;
+    gap: 16px;
+}
+
+.info-table-two-sides {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 341px;
+}
+
+.info-table-row {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    max-width: 341px;
+}
+
+.first-name-grey {
+    font-size: 14px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #6B7280;
+}
+
+.user-name-dark {
+    font-size: 14px;
+    font-family: "Rethink Sans", sans-serif;
+    line-height: 160%;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.pristia-address {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 746px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    background-color: #FFFFFF;
+    padding: 24px;
+    gap: 16px;
+}
+
+.personal-info-heading {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 698px;
+}
+
+.personal-info-heading p {
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #111827;
+}
+
+.pristia-street {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    max-width: 698px;
+}
+
+.user-street {
+    display: flex;
+    width: 100%;
+    max-width: 698px;
+    gap: 20px;
+}
+
+.user-zip-code,
+.zip-code {
+    font-size: 14px;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #6B7280;
+}
+
+.zip-code {
+    font-weight: 600 !important;
+    color: #111827 !important;
+}

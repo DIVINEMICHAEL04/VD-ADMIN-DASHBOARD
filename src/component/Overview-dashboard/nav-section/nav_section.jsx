@@ -10,6 +10,8 @@ import revenue from "../../../assets/revenue.png"
 import logout from "../../../assets/logout.png"
 import settingImg from "../../../assets/settings-img.png"
 import adminiImg from "../../../assets/admin-img.png"
+import navLeft from "../../../assets/side-nav-left.png"
+import navRight from "../../../assets/side-nav-right.png"
 import "./nav_section.css"
 
 function NavSection (){
@@ -19,9 +21,14 @@ function NavSection (){
         <div className="nav-bar">
             <div className="veil-nav-bar">
                 <div className="nav-logo">
-                    <div className="veil-logo nav-img">
+                    <div className="nav-img">
+                        <div className="veil-logo">
                         <img className="veil-digits" src={logo} alt="VeilDigits Logo" />
                             <h2 className='header-logo'>VeilDigits</h2>
+                            </div>
+
+                            <img className='navLeft' src={navLeft} alt="" />
+                            
                     </div>
                     <div className="nav-list">
                         <div className="nav-links">
@@ -69,6 +76,14 @@ function NavSection (){
                                 <Link className={`list-link ${getActiveClass('/FraudSection')}`} to ="/FraudSection">
                                 <img src={shieldSearch} alt="" />
                                 <p>Fraud Detection</p>
+                                </Link>
+                            </span>
+                        </div>
+                        <div className="nav-links">
+                            <span className="quick-links">
+                                <Link className={`list-link ${getActiveClass('/Kyc')}`} to ="/Kyc">
+                                <img src={shieldSearch} alt="" />
+                                <p>KYC Verification</p>
                                 </Link>
                             </span>
                         </div>

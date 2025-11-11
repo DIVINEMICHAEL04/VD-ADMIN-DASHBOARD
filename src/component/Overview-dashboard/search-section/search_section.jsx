@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import mockUsers from "../../../data/mockUsers";
 import chevronDown from "../../../assets/chevron-down.png"
 import Avatar from "../../../assets/Avatar.png"
 import Rayna from "../../../assets/Rayna.png"
@@ -10,6 +9,7 @@ import arrowUp from "../../../assets/arrow-up.png"
 import bar from "../../../assets/bar.png"
 import check from "../../../assets/check.png"
 import hanna from "../../../assets/hanna.png"
+
 import AdminLineCharts from "../AdminLineCharts/AdminLineCharts";
 import AdminBarCharts from "../AdminBarCharts/AdminBarCharts";
 

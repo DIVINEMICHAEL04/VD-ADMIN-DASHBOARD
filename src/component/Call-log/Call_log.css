@@ -1,0 +1,279 @@
+.type-of-call {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.all-calls-btn {
+    padding: 8px 12px;
+    border-radius: 32px;
+    gap: 8px;
+    background-color: #1F2937;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.all-calls-btn p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.trans-calls-btn {
+    padding: 8px 12px;
+    border-radius: 32px;
+    gap: 8px;
+    background-color: transparent;
+    width: 100%;
+    Cursor: pointer;
+}
+
+.trans-calls-btn p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #667085;
+}
+
+.call-search {
+    width: 100%;
+    max-width: 698px;
+    display: flex;
+    justify-content: space-between !important;
+    gap: 16px;
+}
+
+.call-search-bar {
+    width: 100%;
+    max-width: 556px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-call-searchbar {
+    width: 100%;
+    max-width: 556px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background-color: #F9FAFB;
+}
+
+.sub-user-call-searchbar {
+    width: 100%;
+    max-width: 524px;
+    display: flex;
+    gap: 12px;
+}
+
+.sub-user-call-searchbar img {
+    width: 20px;
+    height: 20px;
+}
+
+#call-search-input {
+    width: 100%;
+    max-width: 324px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #6B7280;
+    background-color: #F9FAFB;
+}
+
+.call-routes-dropdown {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end !important;
+    gap: 10px;
+}
+
+.call-routes {
+    width: 100%;
+    max-width: 130px;
+    border-radius: 12px;
+    border: 1px solid #F3F4F6;
+    padding: 15px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-self: end;
+    gap: 12px;
+}
+
+.call-routes p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #374151;
+}
+
+.call-routes img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.routes-dropdown-content {
+    width: 100%;
+    max-width: 232px;
+    padding: 16px;
+    border-radius: 12px;
+    gap: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px #1A202C0F;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    display: none;
+}
+
+.typesof-routes {
+    display: flex;
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.typesof-routes img {
+    width: 24px;
+    height: 24px;
+}
+
+.active-route-bg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F9FAFB;
+}
+
+.active-route {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #111827;
+    text-align: start;
+}
+
+.inactive-route {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #111827;
+}
+
+.incoming-calls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 698px;
+}
+
+.call-log-date {
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    background-color: #F3F4F6;
+}
+
+.call-log-date p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.2px;
+    color: #374151;
+}
+
+.calling-userid {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px 12px 0px;
+}
+
+.calling-userid p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0px;
+    color: #6B7280;
+}
+
+.first-outgoing {
+    display: flex;
+    gap: 12px;
+}
+
+.first-outgoing img {
+    width: 48px;
+    height: 48px;
+}
+
+.outgoing-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.outgoing-name p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0px;
+    color: #1F2937;
+}
+
+.which-call-type {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.which-call-type img {
+    width: 15px;
+    height: 15px;
+}
+
+.outgoing-green-color,
+.missed-yellow-color,
+.incoming-red-color {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 145%;
+    color: #16A34A !important;
+    letter-spacing: 0px;
+}
+
+.incoming-red-color {
+    color: #DC2626 !important;
+}
+
+.missed-yellow-color {
+    color: #CA8A04 !important;
+}

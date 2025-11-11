@@ -1,0 +1,69 @@
+.profile-managements {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 698px;
+}
+
+.management-password-reset {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: start!important;
+}
+
+.manage-reset {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-weight: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: start;
+    color: #111827;
+}
+
+.password-reset-para {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #6B7280;
+    display: flex;
+}
+
+.management-btn {
+    display: flex;
+    padding: 15px 16px;
+    gap: 12px;
+    border-radius: 12px;
+    border: 1px solid #D1D5DB;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.management-btn p {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px !important;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #1F2937;
+}
+
+.management-deactivate {
+    background-color: #1F2937;
+}
+
+.management-deactivate p {
+    color: #FFFFFF;
+}
+
+.management-ban {
+    background-color: #FEE2E2;
+}
+
+.management-ban p {
+    color: #B91C1C;
+}

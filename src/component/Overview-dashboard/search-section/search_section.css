@@ -533,6 +533,7 @@ input {
     padding: 16px;
     border-bottom: 1px solid rgb(238, 234, 234);
     gap: 12px;
+    /* flex-direction: column; */
 }
 
 .users-phone-no p {
