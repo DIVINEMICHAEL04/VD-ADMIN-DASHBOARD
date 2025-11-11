@@ -20,7 +20,7 @@ import RegularCallerSms from "./pages/RegularSms/RegularSms"
 import DataCallerSms from "./pages/DataSms/DataSms"
 import ManagementSect from "./pages/UserManagement/UserManagement"
 import KycSection from "./pages/Kyc/Kyc"
-import KycDocuments from "./pages/KycDocument/KycDocument"
+import KycDocu from "./pages/KycDocument/KycDocument"
 // import './App.css'
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
         <Route path="/RegularSms/DataSms" element={<DataCallerSms />} />
         <Route path="/AllSms/UserManagement" element={<ManagementSect />} />
         <Route path="/Kyc" element={<KycSection />} />
-        <Route path="/Kyc/KycDocument" element={<KycDocuments />} />
+        <Route path="/Kyc/KycDocument" element={<KycDocu />} />
 
 
       </Routes>

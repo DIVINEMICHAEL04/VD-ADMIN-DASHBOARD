@@ -3,7 +3,7 @@ import NavSection from "../../component/Overview-dashboard/nav-section/nav_secti
 import KycDocs from "../../component/Kyc-docs/Kyc_docs"
 import "./KycDocument.css"
 
-export default function KycDocuments(){
+export default function KycDocu(){
     return(
         <div className="kycdocs">
             <NavSection/>
