@@ -160,21 +160,30 @@
     font-size: 14px;
 }
 
+.user-initial-log {
+    transition: filter 0.3s ease;
+}
+
+.user-initial-log.blurred {
+    filter: blur(2px);
+    pointer-events: none;
+}
+
 .slide-show {
     display: flex;
     flex-direction: column;
     padding: 36px;
     padding-top: 0px;
     gap: 32px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     max-width: 784px;
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -1;
+    right: 0;
     width: 100vw;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .inner-slide-show {
@@ -189,9 +198,20 @@
     /*  */
     display: flex;
     flex-direction: column;
+    top: -4rem;
+    right: -7rem;
     gap: 32px;
-    /* width: 100%;
-    max-width: 712px; */
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .close-img {
@@ -204,8 +224,10 @@
     padding: 16px;
     gap: 10px;
     background-color: #E5E7EB;
-    align-self: end;
+    /* align-content: center; */
+    top: 24rem;
     cursor: pointer;
+    position: relative;
 }
 
 .close-img img {
@@ -223,8 +245,104 @@
     text-align: start;
 }
 
+.mega-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 712px;
+    gap: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
 .mega-idd {
     width: 100%;
     max-width: 712px;
+    border-radius: 10px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
     object-fit: contain;
+}
+
+.mega-identity {
+    width: 100%;
+    height: 578.5px;
+    object-fit: contain;
+}
+
+.img-identity {
+    width: 100%;
+    max-width: 712px;
+    height: 450px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 712px;
+}
+
+.sub-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    width: 100%;
+}
+
+.carousel-left,
+.carousel-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    padding: 16px;
+    gap: 10px;
+    background-color: #E5E7EB;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-left:hover,
+.carousel-right:hover {
+    background: #e6f2de;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.all-indicators {
+    width: 12px;
+    height: 12px;
+    transition: background-color 0.3s ease;
+    background-color: #e6f2de;
+    border-radius: 50%;
+}
+
+.all-indicators.active {
+    background-color: #90bf6f;
+}
+
+.indicator-one {
+    background-color: #90BF6F;
+}
+
+.indicator-two {
+    background-color: #E6F2DE;
+}
+
+.indicator-three {
+    background-color: #E6F2DE;
+}
+
+* {
+    /* border: 1px solid #000; */
 }

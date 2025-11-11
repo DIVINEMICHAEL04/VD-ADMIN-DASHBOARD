@@ -13,6 +13,8 @@ import arrowUp from "../../assets/arrow-up.png"
 import bar from "../../assets/bar.png"
 import close from "../../assets/close.png"
 import megaid from "../../assets/megaid.png"
+import chevleft from "../../assets/chevleft.png"
+import chevright from "../../assets/chev-right.png"
 import arrowRight from "../../assets/arrow-right.png"  
 import arrowLeft from "../../assets/arrow-left (2).png"
 import pristiaa from "../../assets/pristiaa.png"
@@ -49,6 +51,29 @@ export default function KycDocs(){
                 const bars = [1,2,3,4,5,6,7,8,9]; 
                 const [showSlide, setShowSlide] = useState(false);
 
+                  const images = [megaid, idback, userselfie];
+                  const [current, setCurrent] = useState(0);
+                  const [direction, setDirection] = useState("next");
+                 
+                  const handleNext = () => {
+                    setDirection("next");
+                    setCurrent((prev) => (prev + 1) % images.length);
+                  };
+                 
+                  const handlePrev = () => {
+                    setDirection("prev");
+                    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+                  };
+
+                  useEffect(() => {
+                  const body = document.querySelector("body");
+                  if (showSlide) {
+                    body.classList.add("blurred");
+                  } else {
+                    body.classList.remove("blurred");
+                  }
+                }, [showSlide]);
+               
     return(
         <div className="users-section-page  ">
             <div className="search-header">
@@ -89,7 +114,7 @@ export default function KycDocs(){
             <div className="individual-info">
                 <div className="sub-individual-info">
                     <div className="sub-user-heading">
-                        <Link className={`list-link  ${getActiveClass('/UserListPage')}`} to="/UserListPage">
+                        <Link className={`list-link  ${getActiveClass('/Kyc')}`} to="/Kyc">
                             {/* <img src={profileUser} alt="" /> */}
                         <img src={navLeft} alt="" 
                         />
@@ -99,11 +124,11 @@ export default function KycDocs(){
 
                     <div className="users-details-log">
                     {/* pristiaa profile */}
-                                                    <div className="user-initial-log">
-                                                        <img src={pristiaa} alt="" />
+                                                    <div className={`user-initial-log ${showSlide ? "blurred" : ""}`}>
+                                                        <img src={fineboy} alt="" />
                     
                                                         <div className="pristiaa-candra">
-                                                            <p className="user-pristiaa">Pristia Candra</p>
+                                                            <p className="user-pristiaa">Chijioke Adewale</p>
                                                             <p className="pristiaa-tel">0813 563 3745</p>
                                                         </div>
                     
@@ -118,7 +143,7 @@ export default function KycDocs(){
                                                         <div className="pristiaa-socials">
                                                             <span className="pristia-mail">
                                                                 <img src={mail} alt="" />
-                                                                <p>lincoln@gmail.com</p>
+                                                                <p>Chijioke@gmail.com</p>
                                                             </span>
                                                             <span className="pristia-phone">
                                                                 <img src={call} alt="" />
@@ -175,12 +200,45 @@ export default function KycDocs(){
 
                                                             {showSlide && (
                                                                 <div className="slide-show">
-                                                                  <div className="inner-slide-show">
+
                                                                     <div className="close-img" onClick={() => setShowSlide(false)}>
                                                                       <img src={close} alt="close" />
                                                                     </div>
+                                                                  <div className="inner-slide-show">
+                                                                    
                                                                     <p className="img-preview">Preview</p>
-                                                                    <img className="mega-idd" src={megaid} alt="ID preview" />
+                                                                    <div className="mega-div">
+                                                                    <img
+                                                                     key={current}
+                                                                     className="mega-idd"
+                                                                     src={images[current]}
+                                                                     alt={`ID preview ${current + 1}`}
+                                                                   />
+                                                                    
+                                                                    </div>
+
+                                                                    <div className="carousel">
+                                                                        <div className="sub-carousel">
+                                                                        <div className="carousel-left" onClick={handlePrev}>
+                                                                            <img src={chevright} alt="Previous" />
+                                                                        </div>
+                                                                        <div className="indicators">
+                                                                            {images.map((_, index) => (
+                                                                              <div
+                                                                                key={index}
+                                                                                className={`indicator all-indicators ${
+                                                                                  index === current ? "active" : ""
+                                                                                }`}
+                                                                              ></div>
+                                                                            ))}
+                                                                        </div>
+                                                                        <div className="carousel-right" onClick={handleNext}>
+                                                                            <img
+                                                                             src={chevleft} alt="Next" />
+                                                                        </div>
+                                                                        </div>
+
+                                                                    </div>
                                                                   </div>
                                                                 </div>
                                                               )}
